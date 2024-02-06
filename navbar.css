@@ -16,7 +16,7 @@ main {
 }
 
 header {
-    background-color: light blue;
+    background-color: #ADD8E6;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,6 +39,10 @@ header li a {
     text-decoration: none;
 }
 
-header li a:hover {
-  background-color: #FAF9F6; 
+#homeLink : hover {
+  background-color: #FAF9F6;
+}
+
+#diffLink : hover {
+  background-color: #FAF9F6;
 }
