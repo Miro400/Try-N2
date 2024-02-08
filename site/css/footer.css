@@ -1,8 +1,8 @@
 div.footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	color: black;
-	text-align: center;
+	
+}
+
+body {
+	height: 100%;
+	margin: 0;
 }
