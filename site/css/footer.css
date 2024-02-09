@@ -1,11 +1,10 @@
 body {
 	height: 600px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
-body > nav {
-	flex: 1 0 auto;
+nav {
 	width: 200px;
 	display: flex;
 	flex-direction: column;
@@ -20,13 +19,14 @@ nav > page {
 	background-color: gold;
 }
 
-body > main {
-	flex: 2 0 auto;
+body > topbar {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex: 1 0 50px;
+	background-color: pink;
 }
 
-main > content {
+body > content {
 	flex: 1 0 auto;
 	background-color: DodgerBlue;
 }
