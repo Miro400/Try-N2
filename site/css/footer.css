@@ -8,13 +8,13 @@ body > nav {
 	flex: 1 0 200px;
 	display: flex;
 	flex-direction: column;
-	border: 3px #ff0000;
-	background-color: #242424;
+	background-color: #101010;
 }
 
 nav > page {
 	flex: 1 0 auto;
-	border: 3px #0000ff;
+	background-color: #240000;
+	opacity: 0.7;
 }
 
 body > main {
@@ -25,9 +25,10 @@ body > main {
 
 main > content {
 	flex: 1 0 auto;
+	background-color: #000024;
 }
 
 main > footer {
 	flex-shrink: 0;
-	border: 3px #00ff00;
+	background-color: #002400;
 }
