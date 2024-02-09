@@ -6,6 +6,14 @@ body {
 
 body > nav {
 	flex: 1 0 200px;
+	display: flex;
+	flex-direction: column;
+	border: 3px #ff0000;
+}
+
+nav > page {
+	flex: 1 0 auto;
+	border: 3px #0000ff;
 }
 
 body > main {
@@ -20,4 +28,5 @@ main > content {
 
 main > footer {
 	flex-shrink: 0;
+	border: 3px #00ff00;
 }
