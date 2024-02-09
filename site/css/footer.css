@@ -33,5 +33,4 @@ main > content {
 main > footer {
 	flex-shrink: 0;
 	background-color: green;
-	min-height: 100%;
 }
