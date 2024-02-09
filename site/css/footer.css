@@ -17,6 +17,7 @@ nav > page {
 	height: 50px;
 	border: 4px black;
 	text-align: center;
+	background-color: gold;
 }
 
 body > main {
