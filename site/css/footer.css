@@ -13,7 +13,6 @@ body > nav {
 	display: flex;
 	flex-direction: column;
 	background-color: #101010;
-	opacity: 0.3;
 	height: 100%;
 }
 
