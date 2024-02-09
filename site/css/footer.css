@@ -20,7 +20,7 @@ body > nav {
 nav > page {
 	flex: 1 0 auto;
 	background-color: #240000;
-	opacity: 0.3;
+	opacity: 0.5;
 	height: 50px;
 	text-align: center;
 }
@@ -34,11 +34,12 @@ body > main {
 main > content {
 	flex: 1 0 auto;
 	background-color: #000024;
+	opacity: 0.5;
 }
 
 main > footer {
 	flex-shrink: 0;
 	background-color: #002400;
-	opacity: 0.3;
+	opacity: 0.5;
 	height: 100%;
 }
