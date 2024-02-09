@@ -9,6 +9,7 @@ body > nav {
 	display: flex;
 	flex-direction: column;
 	border: 3px #ff0000;
+	background-color: #242424;
 }
 
 nav > page {
