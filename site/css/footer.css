@@ -12,7 +12,7 @@ body > nav {
 }
 
 nav > page {
-	flex: 1 0 50px;
+	flex: 1 2 50px;
 	background-color: #240000;
 	opacity: 0.7;
 }
