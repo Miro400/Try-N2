@@ -31,7 +31,7 @@ body > content {
 	background-color: DodgerBlue;
 }
 
-main > footer {
+body > footer {
 	flex-shrink: 0;
 	background-color: green;
 }
