@@ -20,7 +20,6 @@ body > nav {
 nav > page {
 	flex: 1 0 auto;
 	background-color: #240000;
-	opacity: 0.5;
 	height: 50px;
 	text-align: center;
 }
