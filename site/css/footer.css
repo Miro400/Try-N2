@@ -24,7 +24,6 @@ body > main {
 	flex: 2 0 auto;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 }
 
 main > content {
@@ -35,4 +34,5 @@ main > content {
 main > footer {
 	flex-shrink: 0;
 	background-color: #002400;
+	height: 100%;
 }
