@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 body {
 	height: 100%;
 	display: flex;
@@ -9,13 +13,14 @@ body > nav {
 	display: flex;
 	flex-direction: column;
 	background-color: #101010;
+	opacity: 0.3;
 	height: 100%;
 }
 
 nav > page {
 	flex: 1 0 auto;
 	background-color: #240000;
-	opacity: 0.7;
+	opacity: 0.3;
 	height: 50px;
 	text-align: center;
 }
@@ -34,5 +39,6 @@ main > content {
 main > footer {
 	flex-shrink: 0;
 	background-color: #002400;
+	opacity: 0.3;
 	height: 100%;
 }
