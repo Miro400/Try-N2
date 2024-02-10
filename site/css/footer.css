@@ -27,6 +27,7 @@ nav, topbar > button.pagebutton {
 }
 
 topbar > button.logobutton {
+	flex: 1 0 auto;
 	height: 100%;
 	background-image: url("/Try-N2/site/images/KnowledgeShooter_logo.png");
 }
