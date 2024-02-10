@@ -27,9 +27,7 @@ nav, topbar > button.pagebutton {
 }
 
 topbar > button.logobutton {
-	--size: 10px;
-	height: var(--size);
-	width: var(--size);
+	height: 100%;
 	background-image: url("/Try-N2/site/images/KnowledgeShooter_logo.png")
 }
 
