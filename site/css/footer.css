@@ -11,19 +11,20 @@ nav {
 	background-color: tomato;
 }
 
-nav > page {
+body > topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: 1 0 50px;
+	background-color: pink;
+}
+
+nav, topbar > page {
 	flex-shrink: 0;
 	height: 50px;
 	border: 4px black;
 	text-align: center;
 	background-color: gold;
-}
-
-body > topbar {
-	display: flex;
-	flex-direction: row;
-	flex: 1 0 50px;
-	background-color: pink;
 }
 
 body > content {
