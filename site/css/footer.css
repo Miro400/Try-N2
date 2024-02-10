@@ -27,7 +27,8 @@ nav, topbar > button.pagebutton {
 }
 
 topbar > button.logobutton {
-	height: 100%;
+	width: 50px;
+	height: 50px;
 }
 
 body > content {
