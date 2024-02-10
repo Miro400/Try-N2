@@ -19,12 +19,18 @@ body > topbar {
 	background-color: pink;
 }
 
-nav, topbar > page {
+nav, topbar > button.pagebutton {
 	flex-shrink: 0;
 	height: 50px;
-	border: 4px black;
 	text-align: center;
 	background-color: gold;
+}
+
+topbar > button.logobutton {
+	--size: 50px;
+	height: var(--size);
+	width: var(--size);
+	background-image: url("/Try-N2/site/images/KnowledgeShooter_logo.png")
 }
 
 body > content {
