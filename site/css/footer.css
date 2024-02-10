@@ -30,7 +30,6 @@ topbar > button.logobutton {
 	flex: 1 0 auto;
 	width: 50px;
 	height: 50px;
-	background-image: url("/Try-N2/site/images/KnowledgeShooter_logo.png");
 }
 
 body > content {
