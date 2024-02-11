@@ -1,4 +1,5 @@
-main {
+body {
+	overflow: scrolling;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -7,13 +8,13 @@ main {
 sidebar {
 	position: fixed;
 	width: 200px;
-	z-index: 1;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	background-color: tomato;
 }
 
-main > topbar {
+body > topbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -28,6 +29,10 @@ sidebar, topbar > form button.pagebutton {
 	border-radius: 20%;
 	text-align: center;
 	background-color: gold;
+}
+
+sidebar > form button.pagebutton {
+	width: 100%;
 }
 
 topbar > form button.pagebutton {
@@ -52,12 +57,12 @@ topbar > form button.logobutton {
 	background-size: 50px 50px;
 }
 
-main > content {
+body > content {
 	flex: 1 0 auto;
 	background-color: DodgerBlue;
 }
 
-main > footer {
+body > footer {
 	flex-shrink: 0;
 	background-color: green;
 	text-align: center;
