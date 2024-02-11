@@ -1,6 +1,7 @@
 body {
 	overflow: scrolling;
 	height: 100vh;
+	margin: 0px;
 	display: flex;
 	flex-direction: column;
 }
