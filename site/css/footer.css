@@ -48,8 +48,9 @@ button.sidebar {
 	height: 50px;
 	margin-left: 0;
 	margin-top: 0;
-	background: url(/Try-N2/site/images/KnowledgeShooter_logo.png);
+	background: url(/Try-N2/menu.png);
 	background-size: 50px 50px;
+	border-radius: 10%;
 }
 
 topbar > form button.logobutton {
