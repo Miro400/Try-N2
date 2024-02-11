@@ -1,14 +1,13 @@
 body {
 	overflow: scrolling;
 	height: 100vh;
-	z-index: 0;
 	display: flex;
 	flex-direction: column;
 }
 
 sidebar {
 	position: fixed;
-	width: 0px;
+	width: 200px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -24,7 +23,7 @@ body > topbar {
 	background-color: pink;
 }
 
-sidebar, topbar > form button.pagebutton {
+sidebar > form button.pagebutton, topbar > form button.pagebutton {
 	flex-shrink: 0;
 	height: 50px;
 	border-radius: 20%;
