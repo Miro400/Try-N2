@@ -26,6 +26,13 @@ nav, topbar > button.pagebutton {
 	background-color: gold;
 }
 
+topbar > button.pagebutton {
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	width: 150px;
+}
+
 topbar > button.logobutton {
 	width: 50px;
 	height: 50px;
@@ -42,4 +49,5 @@ body > content {
 body > footer {
 	flex-shrink: 0;
 	background-color: green;
+	text-align: center;
 }
