@@ -1,5 +1,9 @@
 body {
 	height: 100vh;
+	
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 }
@@ -12,7 +16,7 @@ sidebar {
 	background-color: tomato;
 }
 
-body > topbar {
+main > topbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -21,21 +25,21 @@ body > topbar {
 	background-color: pink;
 }
 
-sidebar, topbar > button.pagebutton {
+sidebar, topbar > form button.pagebutton {
 	flex-shrink: 0;
 	height: 50px;
+	border-radius: 20%;
 	text-align: center;
 	background-color: gold;
 }
 
-topbar > button.pagebutton {
+topbar > form button.pagebutton {
 	margin-left: 10px;
 	margin-right: 10px;
-	border-radius: 50%;
 	width: 150px;
 }
 
-button.sidebar {
+form button.sidebar {
 	width: 50px;
 	height: 50px;
 	margin-left: 0;
@@ -50,12 +54,12 @@ topbar > form button.logobutton {
 	background-size: 50px 50px;
 }
 
-body > content {
+main > content {
 	flex: 1 0 auto;
 	background-color: DodgerBlue;
 }
 
-body > footer {
+main > footer {
 	flex-shrink: 0;
 	background-color: green;
 	text-align: center;
