@@ -15,11 +15,12 @@ body > topbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	flex-shrink: 0;
 	background-color: pink;
 }
 
-nav, topbar > button.pagebutton {
+sidebar, topbar > button.pagebutton {
 	flex-shrink: 0;
 	height: 50px;
 	text-align: center;
@@ -33,10 +34,11 @@ topbar > button.pagebutton {
 	width: 150px;
 }
 
-topbar > button.sidebar {
+button.sidebar {
 	width: 50px;
 	height: 50px;
 	margin-left: 0;
+	margin-top: 0;
 }
 
 topbar > form button.logobutton {
