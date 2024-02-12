@@ -27,7 +27,7 @@ function toggle(){
     switch(isMovedOut){
         case false:
             while (sidebarwidth < 200 & buttonpos < 200){
-                sleep(30).then(() => {
+                sleep(2).then(() => {
                     sidebarwidth += 2;
                     buttonpos += 2;
                     sidebar.style.setProperty("width", sidebarwidth + 'px');
@@ -37,7 +37,7 @@ function toggle(){
             break;
         case true:
             while (sidebarwidth > 0 & buttonpos > 0){
-                sleep(30).then(() => {
+                sleep(2).then(() => {
                     sidebarwidth -= 2;
                     buttonpos -= 2;
                     sidebar.style.setProperty("width", sidebarwidth + 'px');
