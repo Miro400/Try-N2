@@ -19,12 +19,10 @@ function toggle(){
         case false:
             sidebar.style.setProperty("width", "0px");
             button.style.setProperty("left", "0px");
-            button.style.setProperty("background", "url(/Try-N2/site/images/menu.png)");
             break;
         case true:
             sidebar.style.setProperty("width", "200px");
             button.style.setProperty("left", "200px");
-            button.style.setProperty("background", "url(/Try-N2/site/images/menu_close.png)");
             break;
     }
 }
