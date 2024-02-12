@@ -1,7 +1,7 @@
 // Declare variables
 let button;
 let sidebar;
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("load", (event) => {
     button = document.querySelector(".sidebar");
     sidebar = document.querySelector("sidebar");
 });
