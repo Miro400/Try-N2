@@ -1,9 +1,9 @@
 // Declare variables
 let button;
 let sidebar;
-document.addEventListener("DOMContentLoaded", function() => {
+document.addEventListener("DOMContentLoaded", () => {
     button = document.querySelector(".sidebar");
-    sidebar = document.body.querySelector("sidebar");
+    sidebar = document.querySelector("sidebar");
 });
 let isMovedOut = false;
 
