@@ -25,16 +25,16 @@ function toggle(){
             while (sidebarwidth < 200 & buttonpos < 200){
                 sidebarwidth += 2;
                 buttonpos += 2;
-                sidebarstyle.setProperty("width", sidebarwidth + 'px');
-                buttonstyle.setProperty("left", buttonpos + 'px');
+                sidebar.style.setProperty("width", sidebarwidth + 'px');
+                button.style.setProperty("left", buttonpos + 'px');
             }
             break;
         case true:
             while (sidebarwidth > 0 & buttonpos > 0){
                 sidebarwidth -= 2;
                 buttonpos -= 2;
-                sidebarstyle.setProperty("width", sidebarwidth + 'px');
-                buttonstyle.setProperty("left", buttonpos + 'px');
+                sidebar.style.setProperty("width", sidebarwidth + 'px');
+                button.style.setProperty("left", buttonpos + 'px');
             }
             break;
     }
