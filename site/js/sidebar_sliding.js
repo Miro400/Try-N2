@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     let button = document.querySelector(".sidebar");
     let sidebar = document.body.querySelector("sidebar");
-}).catch(err) => alert(err);
+}.catch(err => alert(err)));
 let isMovedOut = false;
 
 // Add button listener
