@@ -23,7 +23,7 @@ function toggle(){
             button.style.setProperty("left", "0px");
             break;
         case true:
-            sidebar.style.setProperty("width", "200px");
+            sidebar.style.setProperty("width", "200px").catch(err => alert(err));
             button.style.setProperty("left", "200px");
             break;
     }
