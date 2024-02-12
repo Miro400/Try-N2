@@ -1,0 +1,80 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: scrolling;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+sidebar {
+	position: fixed;
+	width: 0px;
+	height: 100vh;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: tomato;
+}
+
+body > topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	background-color: pink;
+}
+
+sidebar > form button.pagebutton, topbar > form button.pagebutton {
+	flex-shrink: 0;
+	height: 50px;
+	border-radius: 20%;
+	text-align: center;
+	background-color: gold;
+}
+
+sidebar > form button.pagebutton {
+	width: 100%;
+}
+
+topbar > form button.pagebutton {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 150px;
+}
+
+button.sidebar {
+	position: fixed;
+	z-index: 2;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	background: url(/Try-N2/site/images/menu.png);
+	background-size: 50px 50px;
+	border-radius: 30%;
+	border: none;
+}
+
+topbar > form button.logobutton {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	background: url(/Try-N2/site/images/KnowledgeShooter_logo.png);
+	background-size: 50px 50px;
+}
+
+body > content {
+	flex: 1 0 auto;
+	background-color: DodgerBlue;
+}
+
+body > footer {
+	flex-shrink: 0;
+	background-color: green;
+	text-align: center;
+}
