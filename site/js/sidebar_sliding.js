@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     let button = document.querySelector(".sidebar");
     let sidebar = document.body.querySelector("sidebar");
-}.catch(err => alert(err)));
+});
 let isMovedOut = false;
 
 // Add button listener
@@ -19,11 +19,11 @@ function swap(){
 function toggle(){
     switch(isMovedOut){
         case false:
-            sidebar.style.setProperty("width", "0px").catch(err => alert(err));
+            sidebar.style.setProperty("width", "0px");
             button.style.setProperty("left", "0px");
             break;
         case true:
-            sidebar.style.setProperty("width", "200px").catch(err => alert(err));
+            sidebar.style.setProperty("width", "200px");
             button.style.setProperty("left", "200px");
             break;
     }
