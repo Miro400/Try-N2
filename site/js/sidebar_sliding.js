@@ -19,7 +19,7 @@ function swap(){
 function toggle(){
     switch(isMovedOut){
         case false:
-            sidebar.style.setProperty("width", "0px");
+            sidebar.style.setProperty("width", "0px").catch(err => alert(err));
             button.style.setProperty("left", "0px");
             break;
         case true:
