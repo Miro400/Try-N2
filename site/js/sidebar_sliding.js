@@ -16,10 +16,6 @@ function swap(){
     isMovedOut = opposite;
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 function toggle(){
     let sidebarwidth = Number(sidebarstyle.getPropertyValue("width").slice(0, -2));
     let buttonpos = Number(buttonstyle.getPropertyValue("left").slice(0, -2));
@@ -27,22 +23,18 @@ function toggle(){
     switch(isMovedOut){
         case false:
             while (sidebarwidth < 200 & buttonpos < 200){
-                sleep(2).then(() => {
-                    sidebarwidth += 2;
-                    buttonpos += 2;
-                    sidebar.style.setProperty("width", sidebarwidth + 'px');
-                    button.style.setProperty("left", buttonpos + 'px');
-                });
+                sidebarwidth += 2;
+                buttonpos += 2;
+                sidebar.style.setProperty("width", sidebarwidth + 'px');
+                button.style.setProperty("left", buttonpos + 'px');
             }
             break;
         case true:
             while (sidebarwidth > 0 & buttonpos > 0){
-                sleep(2).then(() => {
-                    sidebarwidth -= 2;
-                    buttonpos -= 2;
-                    sidebar.style.setProperty("width", sidebarwidth + 'px');
-                    button.style.setProperty("left", buttonpos + 'px');
-                });
+                sidebarwidth -= 2;
+                buttonpos -= 2;
+                sidebar.style.setProperty("width", sidebarwidth + 'px');
+                button.style.setProperty("left", buttonpos + 'px');
             }
             break;
     }
