@@ -14,7 +14,7 @@ function swap(){
     isMovedOut = opposite;
 }
 
-function toggle(){
+function toggle(isMovedOut){
     switch(isMovedOut){
         case false:
             sidebar.style.setProperty("width", "0px");
