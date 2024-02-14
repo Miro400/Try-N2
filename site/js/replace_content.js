@@ -13,7 +13,8 @@ function replace(text, el_type){
       let old_elem = document.querySelector("replace#sidebar");
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      let elem = new DOMParser().parseFromString(text, "text/html").querySelectorAll("*");
+      let elem = new DOMParser().parseFromString(text, "text/html").querySelector("*");
+      console.log(elem);
       parent.appendChild(elem);
       /*let elem_list = new DOMParser().parseFromString(text, "text/html").querySelectorAll("sidebar");
       for (let i = 0; i < elem_list.length; i++) {
