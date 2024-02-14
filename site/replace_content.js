@@ -13,6 +13,10 @@ function replace(text, el_type){
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       let elem_list = new DOMParser().parseFromString(text, "text/html").querySelectorAll("*");
+      for (let i = 0; i < elem_list.length; i++) {
+        parent.appendChild(elem_list[i]);
+      } 
+
       break;
     case "tb":
 
