@@ -24,4 +24,3 @@ function replace(text, el_type){
     case "ft":
 
       break;
-}
