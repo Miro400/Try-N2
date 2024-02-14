@@ -9,7 +9,10 @@ function replace_content(){
 function replace(text, el_type){
   switch(el_type){
     case "sb":
-      let old_elem =
+      let old_elem = document.querySelector("replace#sidebar");
+      let parent = old_elem.parentNode;
+      parent.removeChild();
+      let elem_list = new DOMParser().parseFromString(data, "text/html").querySelector("topbar");
       break;
     case "tb":
 
