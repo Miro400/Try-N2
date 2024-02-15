@@ -50,12 +50,13 @@ topbar > form button.pagebutton {
 
 button.sidebar {
 	position: fixed;
-	z-index: 2;
+	z-index: 1;
 	left: 0px;
 	transition: left 0.7s;
 	width: 50px;
 	height: 50px;
 	background-image: url("/Try-N2/site/images/menu.png");
+	background-color: transparent;
 	background-size: 50px 50px;
 	border-radius: 30%;
 	border: none;
