@@ -58,6 +58,7 @@ button.sidebar {
 	background-image: url("/Try-N2/site/images/menu.png");
 	background-size: 50px 50px;
 	border-radius: 30%;
+	border: none;
 }
 
 topbar > form button.logobutton {
