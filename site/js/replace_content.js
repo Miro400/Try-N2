@@ -15,11 +15,11 @@ function replace_content(){
 }
 
 function replace(data, el_type){
-  let old_elem;
+  let old_elem, parent, elem;
   switch(el_type){
     case "sb":
       old_elem = document.querySelector("replace#sidebar");
-      let parent = old_elem.parentNode;
+      parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("form#sidebar");
       for (let i = 0; i < elem_list.length; i++) {
@@ -28,16 +28,16 @@ function replace(data, el_type){
       break;
     case "tb":
       old_elem = document.querySelector("replace#topbar");
-      let parent = old_elem.parentNode;
+      parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      let elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("topbar");
+      elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("topbar");
       parent.appendChild(elem);
       break;
     case "ft":
       old_elem = document.querySelector("replace#footer");
-      let parent = old_elem.parentNode;
+      parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      let elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("footer");
+      elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("footer");
       parent.appendChild(elem);
       break;
   } 
