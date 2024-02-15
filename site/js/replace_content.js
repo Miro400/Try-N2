@@ -3,19 +3,19 @@ function replace_content(){
   if (document.querySelector("replace#sidebar") != null){
     el_type = "sb";
     console.log("HAHAHAHHAHHHAHAHAHAHA");
-    fetch("sidebar.html").then(data => data.text).then(text => replace(text, el_type));
+    fetch("sidebar.html").then(response => data.text()).then(data => replace(data, el_type));
   }
 }
 
-function replace(text, el_type){
+function replace(data, el_type){
   switch(el_type){
     case "sb":
       let old_elem = document.querySelector("replace#sidebar");
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      let elem = new DOMParser().parseFromString(text, "text/html");
-      console.log(elem);
-      let obj = elem.querySelector("form#sidebar");
+      let doc = new DOMParser().parseFromString(data, "text/html");
+      console.log(doc);
+      let obj = doc.querySelector("form#sidebar");
       console.log(obj);
       parent.appendChild(obj);
       /*let elem_list = new DOMParser().parseFromString(text, "text/html").querySelectorAll("sidebar");
