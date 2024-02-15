@@ -2,7 +2,7 @@ function replace_content(){
   var el_type;
   if (document.querySelector("replace#sidebar") != null){
     el_type = "sb";
-    console.log("HAHAHAHHAHHHAHAHAHAHA")
+    console.log("HAHAHAHHAHHHAHAHAHAHA");
     fetch("sidebar.html").then(data => data.text).then(text => replace(text, el_type));
   }
 }
