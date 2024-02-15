@@ -13,15 +13,10 @@ function replace(data, el_type){
       let old_elem = document.querySelector("replace#sidebar");
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      let doc = new DOMParser().parseFromString(data, "text/html");
-      console.log(doc);
-      let obj = doc.querySelector("form#sidebar");
-      console.log(obj);
-      parent.appendChild(obj);
-      /*let elem_list = new DOMParser().parseFromString(text, "text/html").querySelectorAll("sidebar");
+      let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("form#sidebar");
       for (let i = 0; i < elem_list.length; i++) {
         parent.appendChild(elem_list[i]);
-      }*/
+      }
 
       break;
     case "tb":
