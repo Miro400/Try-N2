@@ -15,7 +15,7 @@ function replace_sidebar(data){
     let old_elem = document.querySelector("replace#sidebar");
     let parent = old_elem.parentNode;
     parent.removeChild(old_elem);
-    let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("form#sidebar");
+    let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("*");
     for (let i = 0; i < elem_list.length; i++) {
         parent.appendChild(elem_list[i]);
     }
@@ -25,16 +25,20 @@ function replace_topbar(data){
     let old_elem = document.querySelector("replace#topbar");
     let parent = old_elem.parentNode;
     parent.removeChild(old_elem);
-    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("topbar");
-    parent.appendChild(elem);
+    let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("*");
+    for (let i = 0; i < elem_list.length; i++) {
+        parent.appendChild(elem_list[i]);
+    }
 }
 
 function replace_footer(data){
     let old_elem = document.querySelector("replace#footer");
     let parent = old_elem.parentNode;
     parent.removeChild(old_elem);
-    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
-    parent.appendChild(elem);
+    let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("*");
+    for (let i = 0; i < elem_list.length; i++) {
+        parent.appendChild(elem_list[i]);
+    }
 }      
 
 replace_content();
