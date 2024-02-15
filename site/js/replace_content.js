@@ -1,47 +1,40 @@
 function replace_content(){
-  var el_type;
-  if (document.querySelector("replace#sidebar") != null){
-    el_type = "sb";
-    fetch("sidebar.html").then(response => response.text()).then(data => replace(data, el_type));
-  }
-  if (document.querySelector("replace#topbar") != null){
-    el_type = "tb";
-    fetch("topbar.html").then(response => response.text()).then(data => replace(data, el_type));
-  }
-  if (document.querySelector("replace#footer") != null){
-    el_type = "ft";
-    fetch("footer.html").then(response => response.text()).then(data => replace(data, el_type));
-  }
+    var el_type;
+    if (document.querySelector("replace#sidebar") != null){
+        fetch("sidebar.html").then(response => response.text()).then(data => replace_sidebar(data));
+    }
+    if (document.querySelector("replace#topbar") != null){
+        fetch("topbar.html").then(response => response.text()).then(data => replace_topbar(data));
+    }
+    if (document.querySelector("replace#footer") != null){
+        fetch("footer.html").then(response => response.text()).then(data => replace_footer(data));
+    }
 }
 
-function replace(data, el_type){
-  let old_elem, parent, elem;
-  switch(el_type){
-    case "sb":
-      old_elem = document.querySelector("replace#sidebar");
-      parent = old_elem.parentNode;
-      parent.removeChild(old_elem);
-      let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("form#sidebar");
-      for (let i = 0; i < elem_list.length; i++) {
+function replace_sidebar(data){
+    let old_elem = document.querySelector("replace#sidebar");
+    let parent = old_elem.parentNode;
+    parent.removeChild(old_elem);
+    let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("form#sidebar");
+    for (let i = 0; i < elem_list.length; i++) {
         parent.appendChild(elem_list[i]);
-      }
-      break;
-    case "tb":
-      old_elem = document.querySelector("replace#topbar");
-      parent = old_elem.parentNode;
-      parent.removeChild(old_elem);
-      elem = new DOMParser().parseFromString(data, "text/html").querySelector("topbar");
-      parent.appendChild(elem);
-      break;
-    case "ft":
-      old_elem = document.querySelector("replace#footer");
-      console.log(old_elem);
-      parent = old_elem.parentNode;
-      parent.removeChild(old_elem);
-      elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
-      parent.appendChild(elem);
-      break;
-  } 
-} 
+    }
+}
+
+function replace_topbar(data){
+    let old_elem = document.querySelector("replace#topbar");
+    let parent = old_elem.parentNode;
+    parent.removeChild(old_elem);
+    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("topbar");
+    parent.appendChild(elem);
+}
+
+function replace_footer(data){
+    let old_elem = document.querySelector("replace#footer");
+    let parent = old_elem.parentNode;
+    parent.removeChild(old_elem);
+    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
+    parent.appendChild(elem);
+}      
 
 replace_content();
