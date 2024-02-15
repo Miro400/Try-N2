@@ -15,8 +15,8 @@ function replace_content(){
 }
 
 function replace(data, el_type){
+  var old_elem;
   switch(el_type){
-    var old_elem;
     case "sb":
       old_elem = document.querySelector("replace#sidebar");
       let parent = old_elem.parentNode;
