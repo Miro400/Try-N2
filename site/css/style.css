@@ -1,3 +1,6 @@
+	/* PAGE LEVEL */
+     /* --------------- */
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -9,6 +12,9 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+     /* --------------- */
+       /* CONTAINER LEVEL */
 
 sidebar {
 	position: fixed;
@@ -30,6 +36,29 @@ body > topbar {
 	background-color: pink;
 }
 
+body > footer {
+	flex-shrink: 0;
+	background-color: green;
+	text-align: center;
+}
+
+body > content {
+	flex: 1 0 auto;
+	background-color: DodgerBlue;
+}
+
+     /* --------------- */
+	/* SIDEBAR LEVEL */
+
+sidebar > dropdown {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 100%;
+	height: 50px;
+}
+
 sidebar > form button.pagebutton, topbar > form button.pagebutton {
 	flex-shrink: 0;
 	height: 50px;
@@ -40,12 +69,6 @@ sidebar > form button.pagebutton, topbar > form button.pagebutton {
 
 sidebar > form button.pagebutton {
 	width: 100%;
-}
-
-topbar > form button.pagebutton {
-	margin-left: 10px;
-	margin-right: 10px;
-	width: 150px;
 }
 
 button.sidebar {
@@ -62,6 +85,15 @@ button.sidebar {
 	border: none;
 }
 
+     /* --------------- */
+	/* TOPBAR LEVEL */
+
+topbar > form button.pagebutton {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 150px;
+}
+
 topbar > form button.logobutton {
 	width: 50px;
 	height: 50px;
@@ -69,15 +101,4 @@ topbar > form button.logobutton {
 	border: none;
 	background-image: url("/Try-N2/site/images/KnowledgeShooter_logo.png");
 	background-size: 50px 50px;
-}
-
-body > content {
-	flex: 1 0 auto;
-	background-color: DodgerBlue;
-}
-
-body > footer {
-	flex-shrink: 0;
-	background-color: green;
-	text-align: center;
 }
