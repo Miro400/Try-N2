@@ -14,7 +14,7 @@ function replace(text, el_type){
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       let elem = new DOMParser().parseFromString(text, "text/html");
-      let obj = Element(elem.querySelector("form#sidebar"));
+      let obj = elem.querySelector("form#sidebar");
       console.log(obj);
       parent.appendChild(obj);
       /*let elem_list = new DOMParser().parseFromString(text, "text/html").querySelectorAll("sidebar");
