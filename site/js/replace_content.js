@@ -16,8 +16,9 @@ function replace_content(){
 
 function replace(data, el_type){
   switch(el_type){
+    var old_elem;
     case "sb":
-      let old_elem = document.querySelector("replace#sidebar");
+      old_elem = document.querySelector("replace#sidebar");
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       let elem_list = new DOMParser().parseFromString(data, "text/html").querySelectorAll("form#sidebar");
@@ -26,14 +27,14 @@ function replace(data, el_type){
       }
       break;
     case "tb":
-      let old_elem = document.querySelector("replace#topbar");
+      old_elem = document.querySelector("replace#topbar");
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       let elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("topbar");
       parent.appendChild(elem);
       break;
     case "ft":
-      let old_elem = document.querySelector("replace#footer");
+      old_elem = document.querySelector("replace#footer");
       let parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       let elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("footer");
