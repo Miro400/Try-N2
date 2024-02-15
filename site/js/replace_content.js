@@ -30,14 +30,14 @@ function replace(data, el_type){
       old_elem = document.querySelector("replace#topbar");
       parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("topbar");
+      elem = new DOMParser().parseFromString(data, "text/html").querySelector("topbar");
       parent.appendChild(elem);
       break;
     case "ft":
       old_elem = document.querySelector("replace#footer");
       parent = old_elem.parentNode;
       parent.removeChild(old_elem);
-      elem = new DOMParser().parseFromString(data, "text/html").querySelectorAll("footer");
+      elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
       parent.appendChild(elem);
       break;
   } 
