@@ -35,6 +35,7 @@ function replace(data, el_type){
       break;
     case "ft":
       old_elem = document.querySelector("replace#footer");
+      console.log(old_elem);
       parent = old_elem.parentNode;
       parent.removeChild(old_elem);
       elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
