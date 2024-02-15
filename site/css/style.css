@@ -57,6 +57,12 @@ sidebar > dropdown {
 	align-items: flex-end;
 	width: 100%;
 	height: 50px;
+	background-color: DodgerBlue;
+}
+
+dropdown > button#dropbutton {
+	width: 100%;
+	height: 50px;
 }
 
 sidebar > form button.pagebutton, topbar > form button.pagebutton {
