@@ -32,4 +32,4 @@ function replace_footer(data){
     parent.replaceChild(elem, old_elem);
 }      
 
-export { replace_content };
+export default replace_content;

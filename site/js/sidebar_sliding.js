@@ -1,4 +1,4 @@
-import { replace_content } from "./replace_content";
+import replace_content from "./replace_content.js";
 
 document = replace_content();
 // Declare variables
