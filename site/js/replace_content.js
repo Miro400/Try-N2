@@ -1,5 +1,4 @@
 function replace_content(){
-    var el_type;
     if (document.querySelector("replace#sidebar") != null){
         fetch("sidebar.html").then(response => response.text()).then(data => replace_sidebar(data));
     }

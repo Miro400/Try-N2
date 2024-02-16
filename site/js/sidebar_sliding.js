@@ -11,6 +11,7 @@ function swap(){
     let opposite = !isMovedOut;
     console.log(opposite);
     toggle(opposite);
+    console.log(window.document);
     isMovedOut = opposite;
 }
 
