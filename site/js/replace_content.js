@@ -8,6 +8,7 @@ function replace_content(){
     if (document.querySelector("replace#footer") != null){
         fetch("footer.html").then(response => response.text()).then(data => replace_footer(data));
     }
+    return document;
 }
 
 function replace_sidebar(data){
@@ -31,4 +32,4 @@ function replace_footer(data){
     parent.replaceChild(elem, old_elem);
 }      
 
-replace_content();
+export default replace_content;

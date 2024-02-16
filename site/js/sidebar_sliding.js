@@ -1,6 +1,9 @@
+import replace_content from "./replace_content.js";
+
+document = replace_content();
 // Declare variables
 let button = document.querySelector(".sidebar");
-let sidebar = document.body.querySelector("sidebar");
+let sidebar = document.querySelector("sidebar");
 let isMovedOut = false;
 
 // Add button listener
