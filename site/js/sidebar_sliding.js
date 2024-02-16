@@ -10,7 +10,7 @@ button.addEventListener("click", swap);
 function swap(){
     let opposite = !isMovedOut;
     console.log(opposite);
-    console.log(document);
+    console.log(document.children);
     toggle(opposite);
     isMovedOut = opposite;
 }
