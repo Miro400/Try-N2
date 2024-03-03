@@ -1,5 +1,3 @@
-import replace_content from "./replace_content.js";
-
 // Declare variables
 let button = document.querySelector(".sidebar");
 let sidebar = document.querySelector("sidebar");
