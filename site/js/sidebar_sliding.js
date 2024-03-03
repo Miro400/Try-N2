@@ -9,6 +9,7 @@ button.addEventListener("click", swap);
 // Swap sidebar state
 function swap(){
     let opposite = !isMovedOut;
+    console.log(document);
     toggle(opposite);
     isMovedOut = opposite;
 }
