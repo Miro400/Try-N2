@@ -1,6 +1,6 @@
 // Declare variables
 let button = document.querySelector(".sidebar");
-let sidebar = document.getElementsByTagName("sidebar").item(0);
+let sidebar = document.getElementById("sidebar");
 console.log(sidebar);
 let isMovedOut = false;
 // Add button listener
