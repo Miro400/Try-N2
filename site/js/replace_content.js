@@ -8,7 +8,7 @@ function replace_content(){
     if (document.querySelector("replace#footer") != null){
         fetch("footer.html").then(response => response.text()).then(data => replace_footer(data));
     }
-    return document;
+    print(document);
 }
 
 function replace_sidebar(data){
