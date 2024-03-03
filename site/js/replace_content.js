@@ -1,5 +1,6 @@
 function replace_content(){
     if (document.querySelector("replace#sidebar") != null){
+        console.log("YEEEES");
         fetch("sidebar.html").then(response => response.text()).then(data => replace_sidebar(data));
     }
     if (document.querySelector("replace#topbar") != null){
@@ -8,7 +9,7 @@ function replace_content(){
     if (document.querySelector("replace#footer") != null){
         fetch("footer.html").then(response => response.text()).then(data => replace_footer(data));
     }
-    print(document);
+    console.log(document);
 }
 
 function replace_sidebar(data){
@@ -31,5 +32,3 @@ function replace_footer(data){
     let elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
     parent.replaceChild(elem, old_elem);
 }      
-
-export default replace_content;
