@@ -32,3 +32,5 @@ function replace_footer(data){
     let elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
     parent.replaceChild(elem, old_elem);
 }      
+
+replace_content();
