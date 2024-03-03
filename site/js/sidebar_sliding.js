@@ -1,6 +1,7 @@
 // Declare variables
 let button = document.querySelector(".sidebar");
 let sidebar = document.querySelector("sidebar");
+console.log(sidebar);
 let isMovedOut = false;
 // Add button listener
 button.addEventListener("click", swap);
