@@ -2,15 +2,15 @@
 let button = document.querySelector(".sidebar");
 let sidebar = document.querySelector("sidebar");
 let isMovedOut = false;
-console.log(document);
 // Add button listener
 button.addEventListener("click", swap);
 
 // Swap sidebar state
 function swap(){
-    let opposite = !isMovedOut;
+    console.log(document);
+    /*let opposite = !isMovedOut;
     toggle(opposite);
-    isMovedOut = opposite;
+    isMovedOut = opposite;*/
 }
 
 function toggle(isMovedOut){
