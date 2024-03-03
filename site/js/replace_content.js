@@ -15,21 +15,21 @@ function replace_content(){
 function replace_sidebar(data){
     let old_elem = document.querySelector("replace#sidebar");
     let parent = old_elem.parentNode;
-    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("sidebar");
+    let elem = new DOMParser().parseFromString(data, "text/html").getElementById("sidebar");
     parent.replaceChild(elem, old_elem);
 }
 
 function replace_topbar(data){
     let old_elem = document.querySelector("replace#topbar");
     let parent = old_elem.parentNode;
-    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("topbar");
+    let elem = new DOMParser().parseFromString(data, "text/html").getElementById("sidebar");
     parent.replaceChild(elem, old_elem);
 }
 
 function replace_footer(data){
     let old_elem = document.querySelector("replace#footer");
     let parent = old_elem.parentNode;
-    let elem = new DOMParser().parseFromString(data, "text/html").querySelector("footer");
+    let elem = new DOMParser().parseFromString(data, "text/html").getElementById("sidebar");
     parent.replaceChild(elem, old_elem);
 }      
 
